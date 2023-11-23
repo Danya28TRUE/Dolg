@@ -9,7 +9,7 @@ public class Car {
     private int ves;
     private Driver driver;
     private Engine engine;
-
+    //конструктор
     public Car(String brand, String carClass, int ves, Driver driver, Engine engine){
         this.brand=brand;
         this.carClass=carClass;
@@ -17,7 +17,7 @@ public class Car {
         this.driver=driver;
         this.engine=engine;
     }
-
+    //get и set
     public  String getBrand(){
         return this.brand;
     }
@@ -60,13 +60,12 @@ public class Car {
     public void turnLeft(){
         System.out.println("Поворот налево");
     }
+   //toString
     @Override
     public String toString(){
         return "Машина:"+
                 "\n  Марка авто: "+brand+
                 "\n  Класс машины: "+carClass+
-                "\n  Вес машины: "+ ves + " кг"+
-                "\n"+engine.toString()+";"+
-                "\nВодитель: "+driver.toString();
+                "\n  Вес машины: "+ ves + " кг";
     }
 }

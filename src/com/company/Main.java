@@ -24,6 +24,7 @@ public class Main {
         Lorry camaz = new Lorry("Camaz","Lorry",6000,driverLorry,engineLorry,7000);
 
         System.out.println(camaz.toString());
+        //изменил
         engineLorry.setCreator("BMW");
         System.out.println(camaz);
 
