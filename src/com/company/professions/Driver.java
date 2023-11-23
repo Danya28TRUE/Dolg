@@ -15,6 +15,6 @@ public class Driver extends Person{
 
     @Override
     public String toString(){
-        return super.toString()+ ";\n  Опыт вождения: "+ stajVoditel;
+        return super.toString()+ ";\n  Опыт вождения: "+ stajVoditel + " лет";
     }
 }

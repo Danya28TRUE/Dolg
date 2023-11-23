@@ -64,7 +64,7 @@ public class Car {
         return "Машина {"+
                 "\n  Марка авто: "+brand+
                 "\n  Класс машины: "+carClass+
-                "\n  Вес машины: "+ ves +
+                "\n  Вес машины: "+ ves + " кг" +
                 "\n"+engine.toString()+";"+
                 "\nВодитель: "+driver.toString();
     }
