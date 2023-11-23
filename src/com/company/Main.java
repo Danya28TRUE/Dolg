@@ -18,10 +18,10 @@ public class Main {
 
         //Создание водителей
         Driver driverLorry = new Driver("Джордж Бущ", 20);
-        Driver driverSport = new Driver("Алексей Абдулин",37);
+        Driver driverSport = new Driver("Джо Байден",37);
 
         //создание грузовика
-        Lorry camaz = new Lorry("Camaz","Lorry",7000,driverLorry,engineLorry,2000);
+        Lorry camaz = new Lorry("Camaz","Lorry",6000,driverLorry,engineLorry,7000);
 
         System.out.println(camaz.toString());
         engineLorry.setCreator("BMW");

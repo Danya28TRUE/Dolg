@@ -4,11 +4,12 @@ import com.company.details.Engine;
 import com.company.professions.Driver;
 
 public class Car {
-    public String brand;
-    public String carClass;
-    public int ves;
-    public Driver driver;
-    public Engine engine;
+    private String brand;
+    private String carClass;
+    private int ves;
+    private Driver driver;
+    private Engine engine;
+
     public Car(String brand, String carClass, int ves, Driver driver, Engine engine){
         this.brand=brand;
         this.carClass=carClass;
@@ -61,10 +62,10 @@ public class Car {
     }
     @Override
     public String toString(){
-        return "Машина {"+
+        return "Машина:"+
                 "\n  Марка авто: "+brand+
                 "\n  Класс машины: "+carClass+
-                "\n  Вес машины: "+ ves + " кг" +
+                "\n  Вес машины: "+ ves + " кг"+
                 "\n"+engine.toString()+";"+
                 "\nВодитель: "+driver.toString();
     }
